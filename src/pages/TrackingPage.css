@@ -1,0 +1,142 @@
+/* Layout Umum */
+.dashboard-container {
+  display: flex;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Menu Bar */
+.menu-bar {
+  width: 250px;
+  background-color: #007bff;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.menu-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-items li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-items li.active,
+.menu-items li:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+.menu-items img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 250px);
+}
+
+.search-tools {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.notification-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Tracking Form */
+.tracking-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tracking-section h2 {
+  margin-bottom: 15px;
+}
+
+.tracking-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.tracking-section input,
+.tracking-section select,
+.tracking-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

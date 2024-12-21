@@ -1,0 +1,146 @@
+/* Container */
+.login-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Illustration Section */
+.illustration-section {
+  flex: 1;
+  background-color: #e0f2fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration-section img {
+  max-width: 70%;
+  height: auto;
+}
+
+/* Form Section */
+.login-form {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.welcome-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Input Fields */
+label {
+  margin: 0.5rem 0 0.3rem;
+  font-size: 0.9rem;
+}
+
+input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Password Input with Eye Icon */
+.password-input {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+/* Options */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  width: 30px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 15px;
+  position: relative;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.switch::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+input:checked + .switch::before {
+  transform: translateX(15px);
+  background-color: green;
+}
+
+.forgot-password {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-google {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-google {
+  background-color: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-google img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
