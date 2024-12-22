@@ -59,7 +59,7 @@ const RekomendasiPersonalPage = () => {
             <p><strong>Nama:</strong> {userData.identity.name}</p>
             <p><strong>Usia:</strong> {userData.identity.age} tahun</p>
             <p><strong>Suasana Hati:</strong> {userData.mood.overall}</p>
-            <p><strong>Jam Tidur:</strong> {userData.assessment.sleepHours} jam</p>
+{/*             <p><strong>Jam Tidur:</strong> {userData.assessment.sleepHours} jam</p> */}
           </div>
           <div className="recommendations">
             <h2>Rekomendasi:</h2>
