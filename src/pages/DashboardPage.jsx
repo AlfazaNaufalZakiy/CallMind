@@ -75,7 +75,7 @@ const DashboardPage = () => {
             <button className="notification-button">🔔</button>
             <div className="profile">
               <img src={profilePic} alt="Profile" className="profile-pic" />
-              <span className="profile-name">Anddy</span>
+              <span className="profile-name">Alfaza</span>
             </div>
           </div>
         </header>
